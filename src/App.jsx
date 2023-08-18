@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
+import titleimg from './assets/title.png'
 import LocationesInfor from './components/LocationesInfor'
 import LocationsForm from './components/LocationsForm'
 import ResidentList from './components/ResidentList'
@@ -41,7 +42,7 @@ function App() {
     
           <main className="bg-[url('/image/bg01.png')] bg-cover bg-center  text-white font-bold min-h-screen font-fire">
             <section className="bg-[url('/image/header.jpeg')]  flex flex-col items-center bg-cover mb-5 " >
-              <img  className='img shadow-2xl' src="/image/title.png" alt="titulo" />
+              <img  className='img shadow-2xl' src={titleimg} alt="titulo" />
                 <LocationsForm handleSubmit={handleSubmit} />
                 <LocationesInfor curretLocation= {curretLocation} />
             </section>
